@@ -314,6 +314,7 @@ PRODUCT_PACKAGES += \
 # RIL
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
+    libsec-ril \
     secril_config_svc \
     sehradiomanager
 endif

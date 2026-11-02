@@ -1,0 +1,30 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Wraps the real Samsung RIL (libsec-ril-impl.so) and nulls the SMSC only
+// for CS SMS requests. GET_SMSC_ADDRESS is left untouched so IMS SMS gets a
+// valid SMSC.
+cc_library_shared {
+    name: "libsec-ril",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["main.cpp"],
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-DANDROID_MULTI_SIM",
+        "-DANDROID_SIM_COUNT_2",
+        "-DRIL_SHLIB",
+        "-DREAL_LIB_NAME=\"libsec-ril-impl.so\"",
+    ],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+    include_dirs: [
+        "hardware/ril/include",
+    ],
+}
