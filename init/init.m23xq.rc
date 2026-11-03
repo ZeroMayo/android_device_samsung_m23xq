@@ -164,3 +164,7 @@ on property:ro.boot.em.model=SM-M236Q
 
 on property:ro.boot.em.model=SM-M236L
     setprop bluetooth.device.default_name "Galaxy Buddy2"
+
+on early-init && property:ro.boot.em.model=SM-M236L
+    # The modem rejects the M236B-signed WLAN firmware and crashes
+    mount none /vendor/firmware/wlanmdsp_m236l.mbn /vendor/firmware/wlanmdsp.mbn bind

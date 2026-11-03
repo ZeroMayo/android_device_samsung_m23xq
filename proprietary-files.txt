@@ -1008,3 +1008,7 @@ vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlanmdsp.mbn
 vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
+
+# WiFi (firmware) - SM-M236L (Galaxy Buddy 2), from M236LKSSDEZB2
+# The modem only accepts a wlanmdsp signed for its own model.
+vendor/firmware/wlanmdsp.mbn:vendor/firmware/wlanmdsp_m236l.mbn|b77b8da2b2f979cedba4ea19c4b4f6c49e7c7b18
