@@ -22,6 +22,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SUPPORT_BOOT_ANIMATIONS := true
 BUILD_BCR := true
 
+WITH_GMS := true
 EVO_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := true
