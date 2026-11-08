@@ -1,5 +1,6 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# Copyright (C) 2022-2025 The LineageOS Project
+# Copyright (C) 2025-2026 The Evolution X Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -17,10 +18,16 @@ $(call inherit-product, device/samsung/m23xq/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Evolution X Flags
+TARGET_SUPPORT_BOOT_ANIMATIONS := true
+BUILD_BCR := true
+
 EVO_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_INCLUDE_ACCORD := false
+
+TARGET_ENABLE_BLUR := true
 
 # Display
 TARGET_SCREEN_HEIGHT := 2408
