@@ -17,6 +17,11 @@ $(call inherit-product, device/samsung/m23xq/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_INCLUDE_ACCORD := false
+
 # Display
 TARGET_SCREEN_HEIGHT := 2408
 TARGET_SCREEN_WIDTH := 1080
