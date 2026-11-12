@@ -461,30 +461,15 @@ vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437
 -vendor/lib/libgsl.so|72d243b145021e3ed191be122a6e6c30bbe4a35d
 -vendor/lib/libllvm-glnext.so|8421f0083a87f73cf2af7c5503b6201e2194d090
 -vendor/lib/libllvm-qcom.so|7ea74959fc794353acc17d3fe3e749ec274b8907
--vendor/lib64/egl/eglSubDriverAndroid.so|0e0c4a1d9462c15e2b14d03b66bed51e85bd9e27
--vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|59cb197303a0374b11e9db751052a4e2fbfae7c4
--vendor/lib64/egl/libGLESv1_CM_adreno.so|d22773a61614ac71cf68d874db66bbe7739761ce
--vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|66cbfdf913b77c43b21a82a016ab4a3bb2c8ea66
--vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|bbd2bdeb3d27461742b10490dc4d3f45379f276d
--vendor/lib64/egl/libq3dtools_esx.so|d522d801247976963d0a15505c39852246f7a458
--vendor/lib64/hw/vulkan.adreno.so|e259809354273562b4b7f1c8c5a78983c68ef8da
 -vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
--vendor/lib64/libCB.so|0e1b139686037e416df43871942359b8e6e1ffd0
--vendor/lib64/libOpenCL.so|ce96cb481976251b309fed436c28935bad5f3e64
 -vendor/lib64/libVkLayer_q3dtools.so|af0923cb7880f4fd78ad42f1257a610bd225e1f3
--vendor/lib64/libadreno_app_profiles.so|00a16af484ea249f77842efcc20fa5c06512ecab
--vendor/lib64/libadreno_utils.so|77bd49be2a006d55a4623b52ec5d2ede8379d9d9
 -vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
 -vendor/lib64/libdiag.so|b31f5a4a06f748993d01fda825cc6ec6dcae8394
 -vendor/lib64/libdisp-aba.so|894b0fe1ace5effb471ebb7437cd590a096e47d8
 -vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
 -vendor/lib64/libdisplayskuutils.so|ac4f2231f098c03824844799106685bf81f97782
 -vendor/lib64/libdpps.so|02538edc4f214b3d6018031aa8460efbc1760223|68e9af103c2a3ca0975e37b0bccca9431f157fd3
--vendor/lib64/libgpudataproducer.so|c74e90e288eff83cde6ec7c132dd13f67f418af7
--vendor/lib64/libgsl.so|4b61df0a0829a3a8039bc2d73b369d9bbc8ac678
 -vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
--vendor/lib64/libllvm-glnext.so|780e61e6b1f653119c808a6a2e5f399838fb0a35
--vendor/lib64/libllvm-qcom.so|7b470265d6cb64b73fef276ffa7ccaef61150f1e
 -vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
 -vendor/lib64/libsdm-color.so|d4e008d6dfca0b5f9bbf5e3b583f33e2606460e4
 -vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
@@ -499,6 +484,24 @@ vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437
 -vendor/lib64/vendor.display.color@1.4.so|ff2233791d4e2c5c0da0f194546c42fc0eb68164
 -vendor/lib64/vendor.display.color@1.5.so|de239337ad42863e5eabeff196b20345d0dce00c
 -vendor/lib64/vendor.display.postproc@1.0.so|e94ad60150b7b6b1c09133c03341044a32cdfde7
+
+# GPU (Adreno 619 userspace, 64-bit) - From SM-X216B X216BXXU9EYKG (Tab A9+ 5G), driver 0762.40, Vulkan 1.3
+-vendor/lib64/egl/eglSubDriverAndroid.so|2ff7cc08c065ed6bb5aaa27eb74a23d8d06b45d0
+-vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|68a9406a85c96aaa230e10134541d838958a9a5c
+-vendor/lib64/egl/libGLESv1_CM_adreno.so|da3fa15c91b0125493aee04f2e01e317e4d497ae
+-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|e36d66c673aeb266b0f29ae8d2020127331c04c8|164cacb8f1fac7275c2d948eb473d19313e05711
+-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|89fb6ac2959c08d3c96f82596bbe0d4d8c4d34ef
+-vendor/lib64/egl/libq3dtools_esx.so|825344003f40e2da77a4ddb0340ad201fa09cb5e
+-vendor/lib64/hw/vulkan.adreno.so|eb33980d8f46c3f488f90735b79df389136331b6|1e9effb986111d77e922d4a044f5404c0727ec96
+-vendor/lib64/libCB.so|07726ce29164bb45bfca1ce6fa96bdf43b32c5f0
+-vendor/lib64/libOpenCL.so|29fbdea43d84c6ee0cde29feaf2af8535e3ca2e3
+-vendor/lib64/libOpenCL_adreno.so|ea08d0843179482ed3a83ee464df5b2929ee0f76
+-vendor/lib64/libadreno_utils.so|f771d803b9bcde23a09a4b1e45b9bfe3f7c287db
+-vendor/lib64/libgpudataproducer.so|13e582222b080c82a12037f0b85351eea6184cbd
+-vendor/lib64/libgsl.so|1bb9070cc33ceda46bf161a7fd471268a5b5c361
+-vendor/lib64/libllvm-glnext.so|bb3ce2ffa72a4b3f00cfb9f0fb93125517c20c47
+-vendor/lib64/libllvm-qcom.so|8bbb781a3b2d2dd85defbdda97346586572aaf8b
+-vendor/lib64/libllvm-qgl.so|1b5144b449bf4a3279992b857c898d8a8d9672ce
 
 # FASTCV
 vendor/lib/libfastcvdsp_stub.so

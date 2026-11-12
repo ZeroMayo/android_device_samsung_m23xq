@@ -40,6 +40,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open'),
+    (
+        'vendor/lib64/egl/libGLESv2_adreno.so',
+        'vendor/lib64/hw/vulkan.adreno.so',
+    ): blob_fixup()
+        .binary_regex_replace(b'libadreno_app_profiles.so', b'libadreno_app_prufiles.so'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/libhypermotion_core.so', 'vendor/lib64/libsensorlistener.so', 'vendor/lib64/libvdis_core.so'): blob_fixup()
